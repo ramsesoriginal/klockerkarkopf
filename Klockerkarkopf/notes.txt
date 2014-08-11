@@ -1,0 +1,30 @@
+*Unverständlich*
+Was?
+Die dings wegen der Mittelsäule,
+Was isch damit?
+Heut isch eins der tage wo sichs entscheidet,
+Was entscheidet?
+ob sie nach links oder nach rechts geht
+Was nach links oder nach rechts?
+Egal
+
+
+
+C:\Users\ramses\Documents\Klockerkarkopf_build
+	exe: klockerkarkopf.exe
+	No Fascist
+	application name: Klockerkarkopf
+	No fullscreen
+	Resolution 1280x1024
+C:\Users\ramses\Documents\klockerkarkopf_build2
+	exe: klockerkarkopf2.exe
+	Fascist
+	Fullscreen
+	Resolution 1920x1080
+
+Batch:
+@echo off
+start C:\Users\ramses\Documents\Klockerkarkopf_build\klockerkarkopf.exe -adapter 2 -force-d3d9 -popupwindow -screen-width 1280 -screen-height 1024
+timeout /t 5 /nobreak > NUL
+start C:\Users\ramses\Documents\klockerkarkopf_build2\klockerkarkopf2.exe -adapter 1 -force-d3d9 -screen-width 1920 -screen-height 1080
+exit
